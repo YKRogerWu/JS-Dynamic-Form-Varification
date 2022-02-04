@@ -1,21 +1,6 @@
-What I have learned in this project:
-- JS Properties
-	1. parentElement: return the parent element of the specific element.
-	2. nodeName: return the current element's name.
-	3.*className: add class tag into a specific tag or label.
+## Form Varification by Javascript
+folder: [YKRogerWu/JS-Dynamic-Form-Varification](https://github.com/YKRogerWu/JS-Dynamic-Form-Varification)
 
--JS Methods
-	1. addEvenListener: this is a useful method that cna triger even automatically. 
-		For example, if you want to triger something while submitting a form, you can use:
-		form.addEventListener('submit', e => { myfunction() });
-
-		also, if you want to varify a form field while the cursor is moved away:
-		email.addEvenListener('focusout', e => { myfunction() });
-
--CSS Units
-	1. vh: vh means viewport height, 1 vh occupies 1% of totally viewport height. This is same to the wh which represents viewport width;
-	2. box-sizing: border-box: a safe and wise way to make the width/height same as they're actually set regardless of border and padding that will be added additionally if not set.
-
--HTML properties
-	1. onfocusout: this is another event that can inset in some tag such as 'input' to execute a function/event while the cursor moves away.
-	2. getElementById/querySelector: the main difference between these two is that the former is limited to the id while the latter can be a html tag, id(#), or class(.).
+**Description** <br>
+This project runs a common sign-up page where a form is used to retrieve and varify user's input. Instead of using built-in HTML form validation ("type" attribute of the input tag), Javascript enables the input rules more flexible and manageable. For example, we can use regular expression to ensure the specific to be in compliance with database, or to remind the user what kind of mistake they have made which resulted in a fail submission. It also promotes the cooperation between HTML and CSS when the appearance need to alter under some circumstances, such as pop-out message or specification of mistaken input fields. <br/>
+In this minor project, Javascript varification was used to further improve the communication between users and the webpage. That is, it tells the user whether their input field is valid or not as soon as the cursor leaves the field, before clicking the submit buttom. The reason for the invalid input can be even specified if they meet predicted behaviours.
